@@ -1,79 +1,35 @@
-<html>
-<head>
-<!-- le amazing usc styles -->
-<link href="<?php echo get_template_directory_uri(); ?>/assets/bootstrap/css/bootstrap.css" rel="stylesheet">
-<style type="text/css">
-  body {
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }
-</style>
-<link href="<?php echo get_template_directory_uri(); ?>/assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-</head>
-<body>
-<div class"navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">Project name</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-      </div>
-
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-        <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+<?php get_header(); ?>
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="row">
+            <h1>Underwater Robotics Blog</h1>
+            &nbsp;
+          </div>
         </div>
       </div>
 
-      <hr>
+      <div class="row-fluid">
+        <div class="span8">
+          <?php while(have_posts()) : the_post() ?>
 
-      <footer>
-        <p>&copy; Company 2012</p>
-      </footer>
+          <div class="row well <?php post_class(); ?>" id="<?php the_ID(); ?>">
+            <div class="span7">
+              <h2><a href="<?php the_permalink(); ?>" title="<?php printf(__('Permalink to %s', 'uscrs'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h2>
+              <h6>
+                Posted by <a href="<?php echo get_author_link( false, $authordata->ID, $authordata->user_nicename ); ?>" title="<?php printf( __( 'View all posts by %s', 'your-theme' ), $authordata->display_name ); ?>"><?php the_author(); ?></a>
+                on <abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>"><?php the_time( get_option( 'date_format' ) ); ?></abbr>
+              </h6>
+              <p>
+                <?php the_content( __( 'Continue reading <span class="meta-nav">&raquo;</span>', 'uscrs' )  ); ?>
+                <?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'uscrs' ) . '&after=</div>') ?>
+              </p>
+            </div>
+          </div>
+          <?php endwhile; ?>
 
-    </div> <!-- /container -->
+        </div><!--span8-->
 
+        <?php get_sidebar(); ?>
 
-
-<script src="<?php echo get_template_directory_uri(); ?>/assets/jquery-1.7.2.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-</html>
+      </div>
+<?php get_footer(); ?>

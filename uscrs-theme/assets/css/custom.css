@@ -1,0 +1,45 @@
+.nav-logo
+{
+  float: right;
+}
+
+.hero-unit {
+  padding: 0px 120px 300px 120px;
+  margin-bottom: 30px;
+  background-image: url('../img/hero.jpeg');
+  background-position: 0px -200px;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  font-family: serif;
+}
+.hero-unit div.banner
+{
+  background: #b90000;
+  padding: 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.hero-unit .white
+{
+  color:#fff;
+}
+.hero-unit .golden
+{
+  color:#ffcc33;
+}
+.hero-unit h1 {
+  margin-bottom: 0;
+  font-size: 40px;
+  line-height: 1;
+  color: inherit;
+  letter-spacing: -1px;
+}
+.hero-unit p {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 27px;
+  color: #ffffff;
+}

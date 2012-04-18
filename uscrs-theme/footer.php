@@ -1,6 +1,6 @@
       <hr>
       <footer>
-        <p>&copy; USC Robotics Society 2012</p>
+        <p>&copy; USC Robotics Society 2012. <a href="/wordpress/wp-admin/">Login here.</a></p>
       </footer>
 
     </div> <!-- /container -->

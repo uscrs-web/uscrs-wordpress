@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>USC Robotics Society</title>
     <!-- Le styles -->
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/custom.css" rel="stylesheet">
@@ -30,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="index.html">USC Robotics Society</a>
+          <a class="brand" href="/wordpress">USC Robotics Society</a>
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="#urt">Underwater Robotics Team</a></li>

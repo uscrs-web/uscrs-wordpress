@@ -1,3 +1,52 @@
+a:link, a:visited
+{
+  color: #C41E3A
+}
+
+img.centered, .aligncenter, div.aligncenter
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.alignright {
+  padding: 4px;
+  margin: 0 0 2px 7px;
+  display: inline;
+}
+
+img.alignleft {
+  padding: 4px;
+  margin: 0 7px 2px 0;
+  display: inline;
+}
+
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
+}
+
+div#widget_twitter_vjck
+{
+  margin-left: -10px;
+}
+
+div#widget_twitter_vjck li
+{
+  margin: 3px;
+  border-bottom: solid 1px #ccc;
+}
+
+div.sidebar-nav ul.menu
+{
+  list-style: none;
+  margin-left: 10px;
+}
+
 .nav-logo
 {
   float: right;

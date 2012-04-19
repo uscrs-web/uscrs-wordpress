@@ -8,6 +8,6 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/js/jquery.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.js"></script>
   </body>
 </html>

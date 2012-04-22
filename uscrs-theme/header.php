@@ -10,6 +10,9 @@
         padding-top: 60px;
         padding-bottom: 40px;
       }
+      a.btn {
+        color: #000000;
+      } 
     </style>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -34,13 +37,13 @@
           <a class="brand" href="/wordpress">USC Robotics Society</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li><a href="#urt">Underwater Robotics Team</a></li>
+              <li><a href="/wordpress/blog">Underwater Robotics Team</a></li>
               <li><a href="#about">Aerial Robotics Team</a></li>
-              <li><a href="#contact">Sponsorship</a></li>
+              <li><a href="/wordpress/sponsorship">Sponsorship</a></li>
             </ul>
           </div><!--/.nav-collapse -->
           <div class="nav-logo">
-            <img src="http://mat.usc.edu/wp-content/themes/mat_usc_slideHP/images/usc-logo.png">
+            <a href="http://www.usc.edu"><img src="http://mat.usc.edu/wp-content/themes/mat_usc_slideHP/images/usc-logo.png"></a>
           </div>
         </div>
       </div>

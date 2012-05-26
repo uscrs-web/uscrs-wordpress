@@ -4,92 +4,234 @@
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-    </style>
+	<style>
+	body
+	{
+		background-image: url('assets/img/pattern1.jpg');
+	}
+	</style>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
   </head>
   <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="index.html">USC Robotics Society</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="#urt">Underwater Robotics Team</a></li>
-              <li><a href="#about">Aerial Robotics Team</a></li>
-              <li><a href="#contact">Sponsorship</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-          <div class="nav-logo">
-            <img src="http://mat.usc.edu/wp-content/themes/mat_usc_slideHP/images/usc-logo.png">
+    <div id="header_wrapper" style="background: #4da1aa; height: 400px; position: relative; top: 0">
+      <div class="container clearfix">
+        <div id="header" style="width: 900px; left:50%; position: fixed; margin-left: -450px; z-index:999">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="container">
+                <div class="nav">
+                  <ul class="nav">
+                    <li><a href="#features">About Us</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="#screenshots">Contact</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="#screenshots">The Team</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="#screenshots">The Robot</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="#screenshots">Media</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="#screenshots">Sponsorship</a></li>
+                  </ul>
+                </div>
+                <div class="nav-logo">
+                  <img src="http://mat.usc.edu/wp-content/themes/mat_usc_slideHP/images/usc-logo.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="slide" style="position: absolute; width: 900px; left:50%; margin-left: -450px; padding-top: 50px">
+          <div class="span12">
+            <div class="span6" style="padding-top: 50px;">
+              <p style="font-size: 50px; color: #eee">Underwater Robotics</p>
+              <br/>
+              <p style="font-size: 25px; color: #ccc">The best thing since sliced breadboards.</p>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <div class="row">
+                <div class="span3">
+                  <a class="btn btn-large">Who are we?</a>
+                </div>
+                <div class="span3">
+                  <a class="btn btn-large">Join our team</a>
+                </div>
+              </div>
+            </div>
+            <div class="span4" style="margin-left: -50px;">
+              <img src="assets/img/seabee-sketch.png"/> 
+            </div>
           </div>
         </div>
       </div>
-    </div><!-- navbar -->
+    </div>
 
-    <div class="container">
-
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <div class="banner row">
-          <div class="span4">
-            <h1 class="golden">USC<span class="white">Robotics Society</a></h1>
-            <p>This is the best thing since sliced breadboards.</p>
-          </div>
-          <div class="span4">
-            <p align="right"><a class="btn btn-warning btn-large"><font color="#b90000">Apply</font></a></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="span4">
-          <h2>Underwater</h2>
-           <p>The Underwater Robotics Team has designed an amazing submersible robot called SeaBee the Third. It competes in competitions and doesn't afraid of anything. It's a little too cool, to be honest.</p>
-          <p><a class="btn" href="urt.html">View details &raquo;</a></p>
-        </div>
-        <div class="span4">
-          <h2>Aerial</h2>
-           <p>The Aerial Robotics Team has this totally awesome quad-rotor. It's autonomous and flies through windows. Once it killed a man. On purpose.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Sponsorship</h2>
-          <p>Like what you see? Want to support a bunch of cool kids as they experience the incredible challenges and rewards of engineering? Become a sponsor!</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-      </div>
-
+    <div id="who" class="container" style="width: 860px; padding-top: 100px; padding-left: 30px; padding-right: 30px;">
+      <p style="font-size:38px; text-align: center; color: #888;">Who are we?</p>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <p style="font-size:28px;">About Us.</p>
       <hr>
+      <p>We might be the most interesting and diverse group of individuals you'll ever meet in your whole life. Plus we get along in a way that's almost uncanny. Building robots is basically our whole life. If we're not in lab, we're thinking about being in lab. If we are in lab, we're kind of upset about it honestly. But we persevere. We solve bugs. We order new parts. We get things done. Once we hung out outside of lab. How are we so great? Some say it's luck. Others say it's just the magic of iLab.</p>
 
-      <footer>
-        <p>&copy; USC Robotics Society 2012</p>
-      </footer>
+      <p>Every year we compete in a competition put on by perhaps the most incredible orgnization known to mankind. In order to win, we have to get our robot to swim around, touch buoys, follow underwater paths, avoid sharks, rescue some treasured friends tied up at the bottom of the lake, all while avoiding the Giant Squid. Sounds impossible doesn't it? We thought so too. Then we tried to do it, and realized it really is pretty hard. But every day we're making great progress, and soon we'll be holding that Robotics Cup high to the cheers of friends and family, and that'll show 'em!</p>
 
-    </div> <!-- /container -->
 
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <p style="font-size:28px;">Contact.</p>
+      <hr>
+      <p>Hey! Email us! We love that!</p>
+
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <p style="font-size:28px;">The Team.</p>
+      <hr>
+      <div class="row">
+        <div class="span7">
+          <p>The Underwater Robotics Team is split up into a handful of subteams. They are listed below.</p>
+          <div class="well">
+            <p>
+            <h4>Electrical Team</h4>
+            These guys take the whole concept of charge gradients to the next level. These guys manage to be creative, and yet grounded in their approach to our elecitrcal problems. Here's a list of things they do:
+            <dl class="dl-horizontal">
+              <dt>Power board</dt>
+              <dd>Gets power to the robot. Actually it does everything else too.</dd>
+
+              <dt>Wires</dt>
+              <dd>Superhighway of the charges.</dd>
+
+              <dt>Lights</dt>
+              <dd>SeaBee is not a cat.</dd>
+            </dl>
+            </p>
+          </div>
+
+          <div class="well">
+            <p>
+            <h4>Software Team</h4>
+            This is the best team. It's comprised of one man. Some say he naturally faces magnetic north, and he roams the woods at night foraging for wolves. All we know is, his commit messages are very terse.
+            <dl class="dl-horizontal">
+              <dt>Super code</dt>
+              <dd>Does everything.</dd>
+
+              <dt>ROS</dt>
+              <dd>This is like wires but in software.</dd>
+
+              <dt>Lights</dt>
+              <dd>Actually we code in the dark.</dd>
+            </dl>
+            </p>
+          </div>
+
+          <div class="well">
+            <p>
+            <h4>Mechanical Team</h4>
+            Without these guys, why would we bother to show up? They give us the inspiration to wake up in the morning, and the courage to go to sleep at night. If anything goes wrong, it's most likely their fault.
+            <dl class="dl-horizontal">
+              <dt>Floating</dt>
+              <dd>Sounds easy. Isn't.</dd>
+
+              <dt>Not falling apart</dt>
+              <dd>SeaBee is great at this, thanks to the mech. team.</dd>
+            </dl>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="what" class="container" style="width: 860px; padding-top: 100px; padding-left: 30px; padding-right: 30px;">
+      <p style="font-size:38px; text-align: center; color: #888;">What do we do?</p>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <p style="font-size:28px;">The Robot.</p>
+      <hr>
+      <p>SeaBee is comprised of many parts that all work together to achieve greatness. Much like a finely crafted Swiss watch, or a human body, or that sandwich you made that one time but haven't been able to replicate, SeaBee is a delicate, yet powerful machine. From her colorful chassis and her copper cooling tubes, to her printed circuit boards and even the software that runs on them, SeaBee has been carefully planned, designed, and implemented by our team of highly efficient professional amateurs. This page contains a pretty awesome (and awesomely brief) overview of SeaBee's design.</p> 
+
+      <b>Mechanical</b>
+      <p>In addition to the chassis that gives SeaBee her striking appearance, our robot also has a handful of nifty mechanical apparatuses that let her do cool robotic stuff. These include a kill switch, a dropper, a torpedo launcher, and thrusters. The kill switch is required for easily shutting down SeaBee's motors in case of an emergency. The dropper and torpedo launcher are necessary to complete some of the tasks presented at the competition. And lastly, the thrusters. One might think of the thrusters as symbolic representations of our team's agility and poise; our ability to act under pressure and displace any obstalces that get in our way as we swim ourselves to success. But one might also think of the thrusters as literal thrusters, because that's what they are, and they can be used to move SeaBee around the pool.</p>
+      <p>The hard-working mechanical group at the Underwater Robotics Team is responsible for figuring out how to get these mechanical requirements designed and working. Their spatial visualization abilities are, frankly, shocking. To get SeaBee from idea to real-life, these guys and ladies use SolidWorks to model their concepts before bringing their designs to life with a 3D printer or CNC. Watching them turn a chunk of metal into a gorgeous kill switch or torpedo launcher will definitely send shivers down your spine and may cause you to ask these people out for coffee afterwords. Don't say we didn't warn you.</p>
+
+      <b>Software</b>
+      <p>What's a robot without brains? Actually it's still a robot since we haven't figured out how to cram a brain into SeaBee yet (and get it working). If you know how to do that, drop us a line. Until then, it's up to the software team to turn our beautifully constructed machine into a graceful underwater mer-ballerina of some sort. We're using ROS, the Robot Operating System developed by Willow Garage, to greatly simplify and modularize our programming tasks. The software on board SeaBee has to take camera input and IMU readings and use that information to control the thrusters and get SeaBee moving around intelligently. This involves tons of pixel sorting, clock cycles, memory accesses, and Java updates.</p>
+      <p>To be a little more verbose, SeaBee grabs images from a camera and filters out all the colors we don't care about. Once we have exciting colors, SeaBee does some straightforward object recogition to find rectangles (for the pipe following task) and buoy-like shapes (for the buoy task). SeaBee maintains a 3D map of its world and attempts to add any recognized objects to this map. She also maintains her own position in this map as she cruises around. Since precise motion control is as pretty difficult task underwater (or anywhere… refer to our failed Robotics Club Dance Competition for examples of terrible motion control), SeaBee also maintains a reasonably precise physics model. This helps get a better idea of where SeaBee might end up after we tell her to actuate her thrusters for a while.</p>
+
+      <b>Electrical</b>
+      <p>Software would be pretty useless without hardware to run it on. Just scribbles and pipe dreams. That's why we spent several weeks searching for the best electrical team money could buy. We wanted our code to flow down traces just as gracefully as SeaBee herself glides through the local ponds and fisheries. Every single board on SeaBee was crafted lovingly by the electrical team. These men and women spend countless joyful hours in lab placing components on designs, routing traces, planning vias, and throwing in extra capacitors. They're so good at it that they can actually simulate the running circuit in their minds and forsee crazy hardware bugs that would take senior engineers in industry months to track down.</p>
+
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <p style="font-size:28px;">Media.</p>
+      <hr>
+      <p>Did you know SeaBee is a famous actress? She really is! She's been in several hit movies, such as Batman: Dark Buoy, The Thirsty Games, Star Wars Episode MXII: Return of the Pinger, and she has a lead role in the upcoming classic Les Submersibles! This page has a few clips from her movies, as well as pictures and stuff. Definitely worth looking at.</p>
+    </div>
+
+    <div id="how" class="container" style="width: 860px; padding-top: 100px; padding-left: 30px; padding-right: 30px;">
+      <p style="font-size:38px; text-align: center; color: #888;">How can you help?</p>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <p style="font-size:28px;">Sponsorship.</p>
+      <hr>
+      <p>Supporting the leaders (and engineers) of tomorrow is perhaps one of the noblest pursuits man (and woman!) is capable of. What better way to ensure the success of the human race than to fund needy students? Your support will help us cure SeaBee's ills and undermine her woes. Your money will help feed our hungry, destitute programmers. Maybe we can even buy a microwave so we don't have to heat old discarded pizzas with the hot exhaust of our horrible, bloated computers. If we had just $1000 extra dollars per day, we would probably find the cure for cancer under the sea or something. Think about that. You can make it happen. Support us!</p> 
+
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    </div>
+
+    <div id="extra" style="background-color: #333;">
+      <div class="container" style="width: 860px; padding-top: 10px; padding-left: 30px; padding-right: 30px; padding-bottom: 100px; color: #eee">
+        <div class="span3">
+          <ul class="nav nav-list">
+            <li class="header">Links</li>
+            <li class="divider"></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Wiki</a></li>
+          </ul>
+        </div>
+        <div class="span3">
+          <b>Twitter</b>
+          <ul>
+            <li>Blah</li>
+            <li>Blah</li>
+            <li>Blah</li>
+            <li>Blah</li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.js"></script>
   </body>
 </html>

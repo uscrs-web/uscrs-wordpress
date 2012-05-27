@@ -43,3 +43,79 @@
   line-height: 27px;
   color: #ffffff;
 }
+
+
+
+div#header_wrapper
+{
+  background: #4da1aa;
+  height: 400px;
+  position: relative;
+  top: 0;
+  background-image: url('../img/header-background.png')
+}
+
+div#header
+{
+  width: 900px;
+  left:50%;
+  position: fixed;
+  margin-left: -450px;
+  z-index:999
+}
+
+div#slide
+{
+  position: absolute;
+  width: 900px;
+  left:50%;
+  margin-left: -450px; padding-top: 50px
+}
+
+div#slide p.title
+{
+  font-size: 50px;
+  color: #111;
+  font-family: serif;
+  text-shadow: 1px 1px 2px #333 
+}
+
+div#slide p.subtitle
+{
+  font-size: 26px;
+  color: #eee;
+  font-family: serif;
+  text-shadow: 1px 1px 2px #333 
+}
+
+div.subsection
+{
+  width: 860px;
+  padding-top: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+div.subsection p + p
+{
+  text-indent: 1.5em;
+}
+
+div.subsection p.title
+{
+  font-size:38px;
+  text-align: center;
+  color: #888;
+  font-family: serif
+}
+
+div.subsection p.subtitle
+{
+  font-size:28px;
+  font-family: serif
+}
+
+div.thumbnail h5
+{
+  text-align: center;
+}

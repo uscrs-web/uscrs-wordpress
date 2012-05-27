@@ -115,7 +115,7 @@ div.subsection p.subtitle
   font-family: serif
 }
 
-div.thumbnail h5
+div.subsection .row .span2
 {
   text-align: center;
 }

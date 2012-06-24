@@ -74,6 +74,39 @@
       <p class="title">What do we do?</p>
       <hr>
       <div class="row-fluid">
+        <ul class="nav nav-tabs" id="what-tabs">
+          <li class="active"><a href="#electrical-tab" data-toggle="tab">Electrical</a></li>
+          <li><a href="#software-tab" data-toggle="tab">Software</a></li>
+          <li><a href="#mechanical-tab" data-toggle="tab">Mechanical</a></li>
+        </ul>
+        <div class="tab-content" style="height: 250px">
+          <div class="tab-pane active" id="electrical-tab">
+            <div class="span4">
+              <img src="assets/img/electrical-pic.png" width="170px"/>
+            </div>
+            <div class="span8">
+            Sometimes life gets you down. The alarm steals you from the warmth of sleep and, blearily, you watch your reflection in the mirror. You stare at her, standing there, poised to brush her teeth. Who is that person? Why is she here? Was this how it was supposed to go? You started your life carefree and empowered. But time steals those moments away until before you know it, you're sitting in a cube under a 60hz pasty white glow and wondering where you went wrong. How can life be like this? Does everyone feel this way? Coffee for the road, coffee for the cube, a light lunch so you're not sleepy in the afternoon. Grim. But then comes that moment. Someone gives you a problem and says "Solve this." And you print out your datasheets, pick up your soldering iron, and remember why you're here. Life brings you into this world, entropy takes you out. In between you get a handful of seconds to be passionate. And at that second daily visit of yourself, you look at her across the sink and, together, you smile. Most people dream when they're asleep, but not you. You dream when you're awake. And you thrive on it.
+            </div>
+          </div>
+          <div class="tab-pane" id="software-tab">
+            <div class="span4">
+              <img src="assets/img/software-pic.png" width="170px"/>
+            </div>
+            <div class="span8">
+              Neat. When you encounter nonsense, you struggle to make sense of it. Pedantic? Sometimes. The last time you looked at the clock it was four in the morning and you were just getting started. Flow. You know you're winning when your total being is a stream of consciousness that can only be expressed through your fingers. Your thinking is esoteric and your biggest fear is stagnation. What happens when your heart is still beating but your brain has stopped? You're determined never to find out. When you visit your family you see a directed acyclic graph, and someone asks you why you're smiling. "I'm just happy." Understading is expensive, but you think it's worth it every single time. Your future isn't programmable but you're damn well going to try. The worst case scenario is catastrophic failure. Is that worse than not trying at all? Right now you don't think so, and dear God you hope you're right.
+            </div>
+          </div>
+          <div class="tab-pane" id="mechanical-tab">
+            
+            <div class="span4">
+              <img src="assets/img/mechanical-pic.png" width="170px"/>
+            </div>
+            <div class="span8">
+              Most people see function, you see art. You like spaces. You like enclosing them and moving them around. Elegance and cleverness make you thrill in a way that you can't fully understand. You don't solve problems, you wait for the solutions to appear in your head. You trust your brain to take care of it, but fundamentally it's a black box. Experience, intuition, magic. Will it run out? As long as a force through a distance can actually get some work done, it won't. Not for you. Your mind depends on it, and you're built too well to break. An error of 2mm over 20 feet makes your parasympathetic nervous system go into overdrive and that's why you're here. Thinking isn't enough.
+            </div>
+          </div>
+        </div>
+        <!--
         <div class="span4">
           <img src="assets/img/electrical-pic.png" width="170px"/>
           <h5>Electrical</h5>
@@ -88,6 +121,7 @@
           <img src="assets/img/mechanical-pic.png" width="170px"/>
           <h5>Mechanical</h5>
         </div>
+        //-->
       </div>
     </div>
     
@@ -95,10 +129,44 @@
       <p class="title">Media.</p>
       <hr>
       <p>Did you know SeaBee is a famous actress? She really is! She's been in several hit movies, such as Batman: Dark Buoy, The Thirsty Games, Star Wars Episode MXII: Return of the Pinger, and she has a lead role in the upcoming classic Les Submersibles! This page has a few clips from her movies, as well as pictures and stuff. Definitely worth looking at.</p>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div id="myCarousel" class="carousel slide">
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <div class="active item">
+            <center><img src="assets/img/mechanical-pic.png" height=300px/></center>
+            <div class="carousel-caption">
+              <h4>Mechanical</h4>
+              <p>It's soooo coooool</p>
+            </div>
+          </div>
+          <div class="item">
+            <center><img src="assets/img/software-pic.png" height=300px/></center>
+            <div class="carousel-caption">
+              <h4>Software</h4>
+              <p>Wooooowwww</p>
+            </div>
+          </div>
+          <div class="item">
+            <center><img src="assets/img/electrical-pic.png" height=300px/></center>
+            <div class="carousel-caption">
+              <h4>Electrical</h4>
+              <p>Bzzzz</p>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      </div>
+
     </div>
 
     <div id="how" class="container subsection">
-      <p class="title">Sponsors</p>
+      <p class="title">Sponsors.</p>
       <hr>
       <p>Supporting the leaders (and engineers) of tomorrow is perhaps one of the noblest pursuits man (and woman!) is capable of. What better way to ensure the success of the human race than to fund needy students? Your support will help us cure SeaBee's ills and undermine her woes. Your money will help feed our hungry, destitute programmers. Maybe we can even buy a microwave so we don't have to heat old discarded pizzas with the hot exhaust of our horrible, bloated computers. If we had just $1000 extra dollars per day, we would probably find the cure for cancer under the sea or something. Think about that. You can make it happen. Support us!</p> 
 
@@ -142,6 +210,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.js" type="text/javascript"></script>
   </body>
 </html>
